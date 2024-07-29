@@ -1,23 +1,24 @@
 <h1>Password Generator</h1>
 <%= form_with url: generate_password_path, method: :post, local: true, html: { id: 'password-form' } do |form| %>
   <div>
+  <%= form.label :case_option, "Case Option" %>
+  <%= form.select :case_option, options_for_select([['Uppercase', 'uppercase'], ['Lowercase', 'lowercase'], ['Mixed', 'mixed'], ['Capitalize', 'capitalize']], 'lowercase') %>
+  </div>
+  
+  <div>
+  <%= form.label :add_non_letter, "Add Non-Letter Characters" %>
+  <%= form.check_box :add_non_letter, id: 'add-non-letter-checkbox' %>
+  </div>
+  
+  <div id="non-letter-container">
+  <%= form.label :non_letter_count, "Non-Letter Count" %>
+  <%= form.number_field :non_letter_count, min: 0, max: 2, value: 0 %>
+  </div>
+  
+  
+  <div>
     <%= form.label :password_length, "Password Length" %>
     <%= form.number_field :password_length, min: 4, max: 12, value: 12 %>
-  </div>
-
-  <div>
-    <%= form.check_box :add_non_letter, id: 'add-non-letter-checkbox' %>
-    <%= form.label :add_non_letter, "Add Non-Letter Characters" %>
-  </div>
-
-  <div id="non-letter-container">
-    <%= form.label :non_letter_count, "Non-Letter Count" %>
-    <%= form.number_field :non_letter_count, min: 0, max: 2, value: 0 %>
-  </div>
-
-  <div>
-    <%= form.label :case_option, "Case Option" %>
-    <%= form.select :case_option, options_for_select([['Uppercase', 'uppercase'], ['Lowercase', 'lowercase'], ['Mixed', 'mixed'], ['Capitalize', 'capitalize']], 'lowercase') %>
   </div>
 
   <div>
