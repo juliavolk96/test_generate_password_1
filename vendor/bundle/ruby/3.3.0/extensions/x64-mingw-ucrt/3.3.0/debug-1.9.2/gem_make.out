@@ -1,0 +1,20 @@
+current directory: D:/FRONT/Portfolio/test-case/test_generate2/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/FRONT/Portfolio/test-case/test_generate2/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240729-25192-qlkntb sitelibdir\=./.gem.20240729-25192-qlkntb clean
+
+current directory: D:/FRONT/Portfolio/test-case/test_generate2/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240729-25192-qlkntb sitelibdir\=./.gem.20240729-25192-qlkntb
+generating debug-x64-mingw-ucrt.def
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: D:/FRONT/Portfolio/test-case/test_generate2/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240729-25192-qlkntb sitelibdir\=./.gem.20240729-25192-qlkntb install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20240729-25192-qlkntb/debug
+
+current directory: D:/FRONT/Portfolio/test-case/test_generate2/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240729-25192-qlkntb sitelibdir\=./.gem.20240729-25192-qlkntb clean
