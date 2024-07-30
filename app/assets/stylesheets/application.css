@@ -32,7 +32,6 @@ label {
 
 input[type="number"],
 input[type="checkbox"],
-input[type="text"],
 select {
   width: 100%;
   padding: 8px;
@@ -60,13 +59,4 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #3c3c39;
   color: #ffffff;
-}
-
-input[type="text"] {
-  width: 100%;
-  font-size: 1rem;
-  border: 2px solid #3498db;
-  border-radius: 4px;
-  background-color: #ecf0f1;
-  color: #2c3e50;
 }
