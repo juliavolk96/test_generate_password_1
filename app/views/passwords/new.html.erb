@@ -35,11 +35,21 @@
   document.addEventListener('DOMContentLoaded', function() {
     const addNonLetterCheckbox = document.querySelector('.add-non-letter-checkbox');
     const nonLetterContainer = document.querySelector('.non-letter-container');
+    const nonLetterCountField = document.querySelector('#non_letter_count');
 
     nonLetterContainer.style.display = addNonLetterCheckbox.checked ? 'block' : 'none';
 
     addNonLetterCheckbox.addEventListener('change', function() {
       nonLetterContainer.style.display = this.checked ? 'block' : 'none';
+      if (!this.checked) {
+        nonLetterCountField.value = 0;
+      }
+    });
+
+    document.querySelector('.password-form').addEventListener('submit', function(event) {
+      if (!addNonLetterCheckbox.checked) {
+        nonLetterCountField.value = 0;
+      }
     });
   });
 </script>

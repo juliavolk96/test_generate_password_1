@@ -1,6 +1,7 @@
 class PasswordsController < ApplicationController
   def new
     @password = session[:password]
+    session[:password] = nil
   end
 
   def generate
